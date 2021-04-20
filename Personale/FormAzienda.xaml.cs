@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi_Personale;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,18 @@ namespace Personale
     /// </summary>
     public partial class FormAzienda : Window
     {
-        public FormAzienda()
+        public FormAzienda(PersonaleAziendale pa)
         {
             InitializeComponent();
+            this.pa = pa;
+        }
+        private string[] qualifiche = new string[] { "Dirigente", "Quadro", "Amministrativo", "Operaio" };
+
+        private PersonaleAziendale pa;
+
+        private void btn_inserisci_Click(object sender, RoutedEventArgs e)
+        {  
+            lsb_riepilogo.Items.Add(pa.ToString());
         }
     }
 }

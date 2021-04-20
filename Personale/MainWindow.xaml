@@ -41,22 +41,22 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">
-            <TextBox Width="100" Height="20"></TextBox>
+            <TextBox x:Name="txt_cdf" Width="100" Height="20"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">
-            <TextBox Width="100" Height="20"></TextBox>
+            <TextBox x:Name="txt_nome" Width="100" Height="20"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">
-            <TextBox Width="100" Height="20"></TextBox>
+            <TextBox x:Name="txt_cognome" Width="100" Height="20"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">
-            <ComboBox Width="100" Height="20"></ComboBox>
+            <ComboBox x:Name="cmb_tipo" Width="100" Height="20" Loaded="cmb_tipo_Loaded"></ComboBox>
         </StackPanel>
 
-        <Button Content="Inserisci" Grid.Row="5" Grid.ColumnSpan="2" Width="100" Height="20" VerticalAlignment="Bottom"></Button>
+        <Button Content="Inserisci" Grid.Row="5" Grid.ColumnSpan="2" Width="100" Height="20" VerticalAlignment="Top" Click="ButtonInserisci_Click" Margin="346,32,346,0"></Button>
         <Button Content="Pulisci" Grid.Row="6" Grid.ColumnSpan="2" Width="100" Height="20"></Button>
         <Button Content="Esci" Grid.Row="7" Grid.ColumnSpan="2" Width="100" Height="20" VerticalAlignment="Top"></Button>
 
