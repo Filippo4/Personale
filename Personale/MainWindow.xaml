@@ -57,7 +57,7 @@
         </StackPanel>
 
         <Button Content="Inserisci" Grid.Row="5" Grid.ColumnSpan="2" Width="100" Height="20" VerticalAlignment="Bottom"></Button>
-        <Button Content="Pulisci" Grid.Row="6" Grid.ColumnSpan="2" Width="100" Height="20"></Button>
+        <Button Content="Pulisci" Grid.Row="6" Grid.ColumnSpan="2" Width="100" Height="20" Click="Pulisci_Click"></Button>
         <Button Content="Esci" Grid.Row="7" Grid.ColumnSpan="2" Width="100" Height="20" VerticalAlignment="Top"></Button>
 
 

@@ -24,5 +24,10 @@ namespace Personale
         {
             InitializeComponent();
         }
+
+        private void Pulisci_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
